@@ -59,19 +59,3 @@ input[type=radio]{
 
     display: none;
 }
-
-div.hoge{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-div.a{
-    width:200px;
-    background-color: #ff0;
-}
-
-div.b{
-    width:200px;
-    background-color: #f00;
-}
