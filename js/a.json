@@ -1,0 +1,24 @@
+{ id: "c", name: "C", jname: "ハ", transpose: 0
+},
+{ id: "cs", name: "C#", jname: "嬰ハ", transpose: 1
+},
+{ id: "d", name: "D", jname: "ニ", transpose: 2
+},
+{ id: "ds", name: "D#", jname: "嬰ニ", transpose: 3
+},
+{ id: "e", name: "E", jname: "ホ", transpose: 4
+},
+{ id: "f", name: "F", jname: "ヘ", transpose: 5
+},
+{ id: "fs", name: "F#", jname: "嬰ヘ", transpose: 6
+},
+{ id: "g", name: "G", jname: "ト", transpose: 7
+},
+{ id: "gs", name: "G#", jname: "嬰ト", transpose: 8
+},
+{ id: "a", name: "A", jname: "イ", transpose: 9
+},
+{ id: "as", name: "A#", jname: "嬰イ", transpose: 10
+},
+{ id: "b", name: "B", jname: "ロ", transpose: 11
+}

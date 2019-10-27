@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tone</title>
+    <link rel="stylesheet" href="css/html5reset-1.6.1.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div id="app">
+        <h1>スケール確認</h1>
+        <div>
+            再生中：{{nowPlay}}
+            <ul id="keys">
+                <li v-for="item in keys" v-bind:key="item.id">
+                    <div>
+                    <label v-bind:for="item.name | keyNameFormat">
+                        <input type="radio" name="keys" v-model="currentKey" v-bind:value="item.name" v-bind:id="item.name | keyNameFormat" >
+                        {{item.name}} ({{item.jname}})
+                    </label>
+                    </div>
+                </li>
+            </ul>
+            <ul id="octs">
+                <li v-for="item in oct">
+                    <div>
+                        <label v-bind:for="item">
+                            <input type="radio" name="octs" v-model="currentOct" v-bind:value="item" v-bind:id="item" >
+                            {{item}} 
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="scaleList" v-for="item in currentList">
+        <h2>{{item.type}}</h2>    
+        <ul class="scale">
+            <li v-for="scale in item.scales">
+                <div class="item">
+                    
+                    <span class="title">{{scale.name}}</span>
+                    <span class="note">{{scale.dispNote}}</span>
+                    <span class="ui">
+                        <button v-on:click="play(scale,$event)">play</button>
+                    </span>
+                </div>
+            </li>
+        </ul>
+        </div>
+
+    </div>
+
+
+    <div class="hoge">
+
+        <div class="a">a</div>
+        <div class="b">b</div>
+
+        <div class="a">a</div>
+        <div class="b">b</div>
+
+        <div class="a">a</div>
+        <div class="b">b</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+     <script src="js/Tone.js"></script>
+     <script src="js/main.js"></script>
+</body>
+</html>
