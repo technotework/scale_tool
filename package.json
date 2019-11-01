@@ -1,0 +1,25 @@
+{
+  "name": "scale_tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/main.js",
+  "scripts": {
+    "ws": "ws",
+    "serve":"npm run ws"    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/technotework/scale_tool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/technotework/scale_tool/issues"
+  },
+  "homepage": "https://github.com/technotework/scale_tool#readme",
+  "devDependencies": {
+    "csslint": "^1.0.5",
+    "htmlhint": "^0.11.0",
+    "local-web-server": "^3.0.7"
+  }
+}
