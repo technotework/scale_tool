@@ -1,61 +1,66 @@
+:root {
+
+    --hoge: red;
+}
+
 * {
     box-sizing: border-box;
 }
 
-html{
+html {
 
-    font-size:62.5%;
-    
+    font-size: 62.5%;
+    color: var(--hoge);
 }
 
-body{
+body {
 
     font-size: 1.6rem;
-    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
     padding: 2.4rem;
 }
 
-h1{
-    font-size:3.6rem;
+h1 {
+    font-size: 3.6rem;
     padding-bottom: 2.4rem;
     letter-spacing: 0.2rem;
 }
 
-h2{
+h2 {
 
     font-size: 2.4rem;
     padding: 2.4rem 0;
 }
 
-ul{
+ul {
 
-    font-size:1.6rem;
+    font-size: 1.6rem;
     line-height: 2.4rem;
     list-style-type: none;
 }
 
-div.scaleList li{
+div.scaleList li {
 
     background-color: #fff;
-    padding:1.6rem;
+    padding: 1.6rem;
 }
 
-div.scaleList li div.item{
+div.scaleList li div.item {
 
     display: flex;
 }
 
-div.scaleList li div.item span{
+div.scaleList li div.item span {
     display: block;
-    
+
 }
 
-div.scaleList li:nth-child(odd){
-    
+div.scaleList li:nth-child(odd) {
+
     background-color: rgb(215, 215, 215);
 }
 
-input[type=radio]{
+input[type=radio] {
 
     display: none;
 }
