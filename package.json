@@ -19,7 +19,7 @@
   "homepage": "https://github.com/technotework/scale_tool#readme",
   "devDependencies": {
     "csslint": "^1.0.5",
-    "htmlhint": "^0.11.0",
+    "htmlhint": "^1.1.4",
     "local-web-server": "^3.0.7"
   }
 }
